@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Profile Card</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <script src="js/main.js" defer></script>
+  </head>
+
+  <body>
+    <main>
+      <article data-testid="test-profile-card" class="profile-card">
+        <figure class="profile-avatar">
+          <img
+            src="assets/profile.png"
+            alt="Profile Avatar"
+            data-testid="test-user-avatar"
+          />
+        </figure>
+
+        <header class="profile-header">
+          <h2 data-testid="test-user-name">Sam George</h2>
+        </header>
+
+        <p data-testid="test-user-bio" class="profile-bio">
+          Passionate web developer exploring clean UI design, semantic HTML, and
+          accessible front-end practices.
+        </p>
+
+        <p class="profile-time">
+          Current time:
+          <span data-testid="test-user-time" id="user-time"></span>
+        </p>
+
+        <nav aria-label="Social Links">
+          <ul data-testid="test-user-social-links" class="social-links">
+            <li>
+              <a
+                href="https://twitter.com/example"
+                target="_blank"
+                rel="noopener noreferrer"
+                data-testid="test-user-social-twitter"
+                >Twitter</a
+              >
+            </li>
+            <li>
+              <a
+                href="https://github.com/example"
+                target="_blank"
+                rel="noopener noreferrer"
+                data-testid="test-user-social-github"
+                >GitHub</a
+              >
+            </li>
+            <li>
+              <a
+                href="https://linkedin.com/in/example"
+                target="_blank"
+                rel="noopener noreferrer"
+                data-testid="test-user-social-linkedin"
+                >LinkedIn</a
+              >
+            </li>
+          </ul>
+        </nav>
+
+        <div class="sections-container" style="display: contents;">
+          <section>
+            <h3>Hobbies</h3>
+            <ul data-testid="test-user-hobbies" class="list">
+              <li>Coding</li>
+              <li>Reading</li>
+              <li>Photography</li>
+              <li>Hiking</li>
+            </ul>
+          </section>
+
+          <section>
+            <h3>Dislikes</h3>
+            <ul data-testid="test-user-dislikes" class="list">
+              <li>Unclear documentation</li>
+              <li>Slow Wi-Fi</li>
+              <li>Cluttered UI</li>
+              <li>Bugs in production</li>
+            </ul>
+          </section>
+        </div>
+      </article>
+    </main>
+  </body>
+</html>
